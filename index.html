@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <main>
+        <div class="container">
+            <div class="innerBox">
+                <div class="titleCard">Исторические даты</div>
+                <div class="dates">
+                    <span id="date1">1990</span><span id="date2">1994</span>
+                </div>
+                <div class="mainPart">
+                    <canvas id="myCanvas" width="400" height="400"></canvas>
+                </div>
+                <div class="buttons">
+                    <div id="diplayOfT"><span id="currentN"></span>/<span id="totalN"></span></div>
+                    <div>
+                    <button onclick="left()" class="buttonImg">
+                    <img src="./leftArrow.png" height="50px" width="50px" alt="buttonpng"/>
+                  </button>
+                  <button onclick="right()" class="buttonImg">
+                    <img src="./rightArrow.png" height="50px" width="50px" alt="buttonpng"/>
+                  </button>
+                </div>
+                </div>
+                <div class="titleBoxes">
+                    <div class="swiper mySwiper" >
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide" id="slide1"></div>
+                      <div class="swiper-slide" id="slide2"></div>
+                      <div class="swiper-slide" id="slide3"></div>
+                      <div class="swiper-slide" id="slide4"></div>
+                      <div class="swiper-slide" id="slide5"></div>
+                      <div class="swiper-slide" id="slide6"></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
